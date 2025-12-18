@@ -1,0 +1,11 @@
+song_id,title,artist,album,genre,language,release_date,duration_sec,price,rating,play_count,is_explicit,label,composer
+1,Kesariya,Arijit Singh,Brahmastra,Romantic,Hindi,2022-07-17,268,49.99,4.8,1250000,false,Sony Music,Pritam
+2,Tum Hi Ho,Arijit Singh,Aashiqui 2,Romantic,Hindi,2013-04-16,262,39.99,4.9,2500000,false,T-Series,Mithoon
+3,Zingaat,Ajay Gogavale,Sairat,Folk,Marathi,2016-04-29,226,29.99,4.7,980000,false,Zee Music,Ajay-Atul
+4,Shivba Raja,Avadhoot Gupte,Maratha,Patriotic,Marathi,2019-02-19,310,35.00,4.6,450000,false,Times Music,Avadhoot Gupte
+5,Apna Bana Le,Arijit Singh,Bhediya,Romantic,Hindi,2022-11-06,245,45.00,4.5,890000,false,Maddock Films,Sachin-Jigar
+6,Deva Shree Ganesha,Ajay Gogavale,Agneepath,Devotional,Hindi,2012-08-10,335,25.00,4.4,670000,false,Dharma Productions,Ajay-Atul
+7,Malang Title Track,Ved Sharma,Malang,Rock,Hindi,2020-01-16,250,30.00,4.2,540000,true,T-Series,Ved Sharma
+8,Chak De India,Sukhwinder Singh,Chak De India,Patriotic,Hindi,2007-06-08,302,20.00,4.9,3200000,false,YRF,Salim-Sulaiman
+9,Kalank Title Track,Arijit Singh,Kalank,Drama,Hindi,2019-03-18,311,40.00,4.3,760000,false,Dharma Productions,Pritam
+10,Shendur Lal Chadhayo,Anup Jalota,Aarti,Devotional,Hindi,2000-09-01,180,15.00,4.1,150000,false,Unknown,Traditional
