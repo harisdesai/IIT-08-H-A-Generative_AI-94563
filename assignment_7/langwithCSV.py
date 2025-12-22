@@ -11,6 +11,8 @@ llm = init_chat_model(
     base_url = "https://api.groq.com/openai/v1",
     api_key = os.getenv("GROQ_API_KEY")
 )
+
+
 csv_file =  st.file_uploader("Upload a CSV file", type=["csv"])
 if csv_file is not None:
     df = pd.read_csv(csv_file)
