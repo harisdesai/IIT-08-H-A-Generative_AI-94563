@@ -18,7 +18,7 @@ llm = init_chat_model(
 )
 
 def WebScrapingApp():
-    st.header("Web Scraping Agent – Sunbeam Internships")
+    st.header("Web Scraping Agent - Sunbeam Internships")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []

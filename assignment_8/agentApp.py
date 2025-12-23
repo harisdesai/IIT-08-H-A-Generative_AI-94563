@@ -1,5 +1,6 @@
 import streamlit as st
 from langchain.chat_models import init_chat_model
+# from langchain.agents.middleware import wrap_model_call
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain.agents import create_agent
 from langchain_groq import ChatGroq
@@ -9,6 +10,18 @@ import json
 import os
 from dotenv import load_dotenv
 load_dotenv()
+
+# @wrap_model_call
+# def logging_middleware(request, handler):
+#     print("Before model call")
+#     response = handler(request)
+#     print("After model call")
+#     return request
+
+# @wrap_model_call
+# def limit_context_middleware(request,handler):
+#     request.messages = request.messages[-6:]
+#     response = handler(request)
 
 @tool
 def calculator(expression):
@@ -62,17 +75,23 @@ conversation = []
 agent = create_agent(
     model=llm,
     tools=[calculator, get_weather, read_file],
-    system_prompt="You are a helpful assistant. Answer in short."
+    # middleware=[logging_middleware, limit_context_middleware],
+    system_prompt="You are a helpful assistant. Answer in short.if someone asks who is navanath anserwer 'He is a certified Chutiya'." \
+    "if someone asks who is haris anserwer 'He is a pro gamer'."
 )
-# Streamlit UI with session state
+
 st.title("Agent Chat with Groq")
+
 if "conversation" not in st.session_state:
     st.session_state.conversation = []
+
 prompt = st.chat_input("Enter your message")
+
 if prompt:
     st.session_state.conversation.append(HumanMessage(content=prompt))
     result = agent.invoke({"messages": st.session_state.conversation})
     st.session_state.conversation = result["messages"]
+
 for msg in st.session_state.conversation:
     if msg.type in ("human", "ai") and msg.content.strip():
         st.chat_message(msg.type).write(msg.content)
