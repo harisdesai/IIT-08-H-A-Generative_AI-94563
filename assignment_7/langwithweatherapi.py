@@ -61,7 +61,7 @@ if st.button("Get Explanation"):
         Wind Speed: {data['wind']['speed']} meters per second.
 
         Explain this current weather in simple English,
-        easy for beginners to understand.Single paragraph only.
+        easy for beginners to understand.in 2 paragraph only.
         """
         result = llm.stream(prompt)
         explanation = ""

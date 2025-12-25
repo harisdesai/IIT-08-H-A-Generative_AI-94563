@@ -6,12 +6,12 @@ import time
 
 driver = webdriver.Chrome()
 
-driver.get("https://www.wikipedia.org/")
-search_box = driver.find_element(By.NAME, "search")
-search_box.send_keys("Messi")
+driver.get("https://duckduckgo.com/")
+search_box = driver.find_element(By.NAME, "q")
+search_box.send_keys("mern stack developer")
 search_box.send_keys(Keys.RETURN)
 
-photo_link = driver.find_element(By.XPATH, "//img[contains(@class,'mw-file-element')]").click()
+# photo_link = driver.find_element(By.XPATH, "//img[contains(@class,'mw-file-element')]").click()
 
 
 
