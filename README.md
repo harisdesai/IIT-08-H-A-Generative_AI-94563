@@ -1,108 +1,66 @@
-IIT-08-H-A-Generative_AI-94563
+# IIT-08-H-A-Generative_AI-94563
 
-📌 Overview
+## Course: Generative AI (IIT-08-H-A)
 
-This repository contains assignments, experiments, and mini-projects developed as part of the Generative AI course (IIT-08-H-A).
-It focuses on practical implementation of LLMs, agents, RAG, Streamlit apps, and AI-powered tools using Python.
+This repository contains assignments, experiments, and mini-projects completed as part of the **Generative AI (IIT-08-H-A)** course.  
+The work focuses on practical implementation of **Large Language Models (LLMs)**, **AI Agents**, **RAG systems**, and **Streamlit-based applications**.
 
-🎯 Objectives
+---
 
-Understand the fundamentals of Generative AI
+## Objectives
 
-Work with Large Language Models (LLMs)
+- Understand core concepts of Generative AI
+- Work with Large Language Models (LLMs)
+- Build interactive AI applications using Streamlit
+- Implement Agents, Tools, and RAG pipelines
+- Integrate APIs, databases, and documents with AI systems
 
-Build AI-powered applications using Streamlit
+---
 
-Implement agents, tools, and retrieval-based systems
+## Topics Covered
 
-Gain hands-on experience with real-world AI use cases
+- Prompt Engineering  
+- LLM APIs (Groq / OpenAI-compatible)  
+- LangChain and LangGraph  
+- AI Agents and Tools  
+- Retrieval-Augmented Generation (RAG)  
+- Vector Databases (ChromaDB)  
+- Streamlit Applications  
+- CSV, PDF, and Database Question Answering  
+- Web Automation using Selenium  
 
-🧠 Key Topics Covered
+---
 
-Prompt Engineering
+## Technologies Used
 
-LLM Integration
+- Python  
+- Streamlit  
+- LangChain  
+- Groq API  
+- MySQL  
+- ChromaDB  
+- Pandas  
+- Selenium  
+- dotenv  
 
-LangChain & LangGraph
+---
 
-Agents & Tools
+## Repository Structure
 
-RAG (Retrieval-Augmented Generation)
-
-Vector Databases
-
-Streamlit Applications
-
-API Integration
-
-CSV / PDF / Database-based AI Apps
-
-🛠️ Technologies Used
-
-Python
-
-Streamlit
-
-LangChain
-
-Groq / OpenAI-compatible APIs
-
-MySQL
-
-Chroma / Vector Stores
-
-Pandas
-
-Selenium (Web Automation)
-
-dotenv
-
-🚀 How to Run
-
-Clone the repository
-
-git clone https://github.com/harisdesai/IIT-08-H-A-Generative_AI-94563.git
-
-
-Create and activate virtual environment
-
-python -m venv venvironment
-venvironment\Scripts\activate
-
-
-Install dependencies
-
-pip install -r requirements.txt
-
-
-Run Streamlit apps
-
-streamlit run app.py
-
-🔐 Environment Variables
-
-Create a .env file and add:
-
-GROQ_API_KEY=your_api_key_here
-API_KEY=your_weather_api_key
-
-📊 Learning Outcomes
-
-Built multiple AI-powered applications
-
-Gained hands-on experience with LLM APIs
-
-Learned agent-based reasoning
-
-Implemented real-world AI workflows
-
-Improved problem-solving and debugging skills
-
-👨‍💻 Author
-
-Haris Desai
-Student – Generative AI Program
-
-📜 License
-
-This project is for educational purposes only.
+```bash
+IIT-08-H-A-Generative_AI-94563/
+│
+├── assignment_1/
+├── assignment_2/
+├── assignment_3/
+├── assignment_4/
+├── assignment_5/
+├── assignment_6/
+├── assignment_7/
+├── assignment_8/
+├── assignment_9/
+├── assignment_10/
+│
+├── venvironment/
+├── requirements.txt
+└── README.md
