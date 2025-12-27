@@ -28,7 +28,8 @@ def search_resumes(job_description, top_k):
 
     results = collection.query(
         query_embeddings=[query_embedding],
-        n_results=top_k
+        n_results=top_k,
+        include=["documents", "metadatas"]
     )
 
     return results
