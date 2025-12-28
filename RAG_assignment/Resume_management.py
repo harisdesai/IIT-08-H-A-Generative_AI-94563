@@ -18,14 +18,17 @@ if uploaded_files:
 
 UPLOAD_DIR = "uploaded_resumes"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
+if st.button("Store Resumes"):
+    if uploaded_files:
+        for file in uploaded_files:
+            save_path = os.path.join(UPLOAD_DIR, file.name)
+            with open(save_path, "wb") as f:
+                f.write(file.read())
 
-if uploaded_files:
-    for file in uploaded_files:
-        save_path = os.path.join(UPLOAD_DIR, file.name)
-        with open(save_path, "wb") as f:
-            f.write(file.read())
-
-        store_resume(save_path)
+            store_resume(save_path)
+        st.success("Resumes stored successfully!")
+    else:
+        st.error("Please upload at least one resume PDF.")
 
 st.header("Shortlist Resumes")
 
@@ -36,8 +39,8 @@ job_description = st.text_area(
 
 top_k = st.number_input(
     "Number of resumes to shortlist",
-    min_value=3,
-    max_value=3,
+    min_value=1,
+    max_value=10,
     value=3
 )
 

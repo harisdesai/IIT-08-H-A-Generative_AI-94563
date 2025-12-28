@@ -33,6 +33,7 @@ def explain(resume_text, job_description):
     Reason:
     <clear reason for selection>
 
+    "do not show job description or resume in the final output"
     JOB DESCRIPTION:
     {job_description}
 
